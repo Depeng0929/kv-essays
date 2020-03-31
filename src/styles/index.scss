@@ -1,0 +1,11 @@
+@import "var";
+@import "reset";
+@import "lib";
+@import "layout";
+
+html, body {
+  font-family: $price-integer-font-family;
+  color: $black;
+  font-size: $font-size-lg;
+  background-color: $bg;
+}
