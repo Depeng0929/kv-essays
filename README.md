@@ -1,29 +1,7 @@
-# vue-components
-
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Run your unit tests
-```
-yarn test:unit
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# vue组件总结
+最近在看几本书,本项目是这几本书的综合练习...
+* <<重构>>
+* <<数据结构和算法>>
+* <<js设计模式>>
+* <<css世界>>
+* 掘金小册<<Vue.js组件精讲>>
