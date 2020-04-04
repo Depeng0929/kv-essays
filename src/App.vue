@@ -4,6 +4,7 @@
       <ul class="app-ul">
         <li class="app-li"><router-link to="/">Home</router-link></li>
         <li class="app-li"><router-link to="/form">Form</router-link></li>
+        <li class="app-li"><router-link to="/check">check</router-link></li>
       </ul>
     </nav>
     <main>

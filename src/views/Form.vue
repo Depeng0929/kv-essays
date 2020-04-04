@@ -4,7 +4,9 @@
       <v-form-item prop="name" label="姓名">
         <v-input v-model="form.name"></v-input>
       </v-form-item>
-
+      <v-form-item prop="age" label="年龄">
+        <v-input v-model="form.age"></v-input>
+      </v-form-item>
       <button @click="submit">验证</button>
     </v-form>
   </div>
@@ -30,6 +32,9 @@ export default {
       rules: {
         name: [
           { required: true, message: '用户名不能为空', trigger: 'blur' }
+        ],
+        age: [
+          { required: true, message: '请填写年龄', trigger: 'blur' }
         ]
       }
     }
@@ -52,5 +57,11 @@ export default {
 </script>
 
 <style lang="scss">
-
+[type="checkbox"] {
+  &:default +div {
+    &::after{
+      content: '推荐';
+    }
+  }
+}
 </style>

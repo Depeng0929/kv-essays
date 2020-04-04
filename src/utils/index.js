@@ -1,6 +1,6 @@
 export function findComponentUp (context, componentName) {
   let parent = context.$parent
-  let name = context.$options.name
+  let name = parent.$options.name
 
   while (parent && (!name || name !== componentName)) {
     parent = parent.$parent
@@ -47,7 +47,7 @@ export function findComponentsDown (context, componentName) {
     if (child.$options.name) components.push(child)
     const foundChilds = findComponentsDown(child, componentName)
     return components.concat(foundChilds)
-  })
+  }, [])
 }
 
 export function findBrotherComponents (context, componentName, exceptMe = true) {

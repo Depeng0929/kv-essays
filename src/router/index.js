@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 
 import Home from '../views/Home.vue'
 import Form from '../views/Form.vue'
+import Check from '../views/check.vue'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -15,6 +17,11 @@ const routes = [
     path: '/form',
     name: 'Form',
     component: Form
+  },
+  {
+    path: '/check',
+    name: 'Check',
+    component: Check
   }
 ]
 
