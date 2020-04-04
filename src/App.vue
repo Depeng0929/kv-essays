@@ -2,13 +2,24 @@
   <div id="app">
     <div id="nav">
       <ul>
-        <li><router-link to="/">Home</router-link></li>
+        <li>
+          <router-link to="/">Home</router-link>
+        </li>
       </ul>
     </div>
     <hr />
-    <router-view/>
+    <router-view />
   </div>
 </template>
+
+<script>
+import store from './store/index'
+export default {
+  provide: {
+    store
+  }
+}
+</script>
 
 <style lang="scss">
 </style>
