@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <button>点我</button>
+    测试全局store
   </div>
 </template>
 
@@ -8,9 +8,12 @@
 
 export default {
   name: 'Home',
+
   inject: ['store'],
-  created () {
-    console.log(this.store.state.name)
+  mounted () {
+    this.$on('add', (text) => {
+      console.log(text)
+    })
   }
 }
 </script>

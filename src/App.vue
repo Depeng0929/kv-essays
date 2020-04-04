@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <ul>
-        <li>
-          <router-link to="/">Home</router-link>
-        </li>
+    <nav id="nav">
+      <ul class="app-ul">
+        <li class="app-li"><router-link to="/">Home</router-link></li>
+        <li class="app-li"><router-link to="/form">Form</router-link></li>
       </ul>
-    </div>
-    <hr />
-    <router-view />
+    </nav>
+    <main>
+      <router-view />
+    </main>
   </div>
 </template>
 
@@ -22,4 +22,12 @@ export default {
 </script>
 
 <style lang="scss">
+  @import "./styles/index";
+  #app {
+    .app-li {
+      &:not(:first-child) {
+        margin-top: 20px;
+      }
+    }
+  }
 </style>
