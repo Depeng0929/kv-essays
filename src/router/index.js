@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Form from '../views/Form.vue'
 import Check from '../views/check.vue'
+import Notice from '../views/notice.vue'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
     path: '/check',
     name: 'Check',
     component: Check
+  },
+  {
+    path: '/notice',
+    name: 'Notice',
+    component: Notice
   }
 ]
 
