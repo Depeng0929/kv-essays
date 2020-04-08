@@ -5,6 +5,7 @@ import Home from '../views/Home.vue'
 import Form from '../views/Form.vue'
 import Check from '../views/check.vue'
 import Notice from '../views/notice.vue'
+import Render from '../views/render.vue'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,11 @@ const routes = [
     path: '/notice',
     name: 'Notice',
     component: Notice
+  },
+  {
+    path: '/render',
+    name: 'Render',
+    component: Render
   }
 ]
 
